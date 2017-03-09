@@ -79,7 +79,7 @@ alias gcm='git checkout master'
 alias gcmsg='git commit -m'
 alias gco='git checkout'
 alias gcount='git shortlog -sn'
-compdef _git gcount
+# compdef _git gcount
 alias gcp='git cherry-pick'
 alias gcpa='git cherry-pick --abort'
 alias gcpc='git cherry-pick --continue'
@@ -92,7 +92,7 @@ alias gdt='git diff-tree --no-commit-id --name-only -r'
 alias gdw='git diff --word-diff'
 
 gdv() { git diff -w "$@" | view - }
-compdef _git gdv=git-diff
+# compdef _git gdv=git-diff
 
 alias gf='git fetch'
 alias gfa='git fetch --all --prune'
@@ -181,7 +181,7 @@ alias glola="git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %C
 alias glog='git log --oneline --decorate --graph'
 alias gloga='git log --oneline --decorate --graph --all'
 alias glp="_git_log_prettily"
-compdef _git glp=git-log
+# compdef _git glp=git-log
 
 # alias gm='git merge'
 alias gm='git merge --no-ff'
