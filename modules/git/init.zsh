@@ -38,7 +38,9 @@ function work_in_progress() {
 # (sorted alphabetically)
 #
 
+alias d='git diff'
 alias g='git'
+alias s='git status -sb'
 
 alias ga='git add'
 alias gaa='git add --all'
@@ -73,7 +75,7 @@ alias gcl='git clone --recursive'
 alias gclean='git clean -fd'
 alias gpristine='git reset --hard && git clean -dfx'
 alias gcm='git checkout master'
-alias gcd='git checkout develop'
+# alias gcd='git checkout develop'
 alias gcmsg='git commit -m'
 alias gco='git checkout'
 alias gcount='git shortlog -sn'
